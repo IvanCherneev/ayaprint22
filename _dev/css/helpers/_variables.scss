@@ -1,0 +1,181 @@
+// Переменные размеров для adjustment
+$footer-height: 1100px;
+$container-width: 1240px;
+$padding-footer: 0;
+
+// Цветовая палитра
+$one-white: #ffffff;
+
+$one-blue: #2e2771;
+$two-blue: #393185;
+$three-blue: #372f81;
+$four-blue: #473d94;
+$five-blue: #a2a0c0;
+$six-blue: #e2e2ed;
+$seven-blue: #ecf5fd;
+$eight-blue: #f2f7fb;
+$nine-blue: #393277;
+$ten-blue: #eff8ff;
+$eleven-blue: #9ea3c4;
+$twelve-blue: #b1c2e8;
+
+$one-black: #231f20;
+$two-black: #262626;
+$three-black: #303030;
+$four-black: #3b3b3b;
+
+$one-red: #e50a62;
+
+/* -------------------------------
+*	Основные цвета для элементов страницы
+---------------------------------*/
+
+// Цвет страницы
+$page-bg-color: $one-white;
+
+// Топ бар
+$topbar-bg-color: $one-white;
+$topbar-text-color: $one-blue;
+$topbar-icon-color: $one-blue;
+$topbar-line-color: $six-blue;
+
+// Шапка
+$header-text-logo-color: $two-blue;
+$header-text-color: $two-black;
+$header-icon-color: $two-blue;
+$header-link-color: $two-blue;
+$header-link-line-color: $five-blue;
+$header-button-text-color: $one-white;
+$header-button-bg-color: $one-red;
+$header-button-border-color: $one-red;
+$header-button-bg-color-hover: $one-white;
+$header-button-text-color-hover: $one-red;
+
+// Меню
+$navigation-bg-color: $two-blue;
+$navigation-text-color: $one-white;
+$navigation-icon-color: $one-white;
+$navigation-bg-color-hover: $one-red;
+
+// Выпадающее меню
+$dropdown-bg-color: $seven-blue;
+$dropdown-line-color: $one-red;
+$dropdown-title-text-color: $one-blue;
+$dropdown-item-color: $two-blue;
+$dropdown-shadow-color: $three-blue;
+
+// Слайд меню
+$slidenavigation-bg-color: $two-blue;
+$slidenavigation-text-color: $one-red;
+$slidenavigation-border-color: $four-blue;
+$slidenavigation-bg-color-hover: $one-red;
+$slidenavigation-border-color-hover: $one-red;
+
+// Баннер
+$banner-text-color: $one-white;
+$banner-line-color: $one-red;
+$banner-button-bg-color: $one-red;
+$banner-button-border-color: $one-red;
+$banner-button-bg-color-hover: transparent;
+
+// Секция Популярные тиражи
+$banner-line-color: $one-red;
+$popcirc-title-text-color: $two-blue;
+$popcirc-block-text-color: $two-blue;
+$popcirc-block-bg-color: $two-blue;
+$popcirc-block-button-bg-color: transparent;
+$popcirc-block-button-border-color: $one-red;
+$popcirc-block-button-text-color: $one-red;
+$popcirc-block-button-icon-color: $one-red;
+$popcirc-block-button-shadow-color: $one-red;
+
+// Секция Стоимость
+$cost-line-color: $one-red;
+$cost-title-text-color: $two-blue;
+$cost-table-border-color: $eight-blue;
+$cost-table-hr-color: $two-blue;
+$cost-table-hr-text-color: $one-white;
+$cost-table-odd-tr-color: $two-blue;
+$cost-table-even-tr-color: $eight-blue;
+$cost-table-tr-text-color: $three-black;
+$cost-table-default-td-bg-color: $one-red;
+$cost-table-default-td-text-color: $one-white;
+$cost-sub-title-text-color: $two-blue;
+$cost-text-color: $three-black;
+$cost-border-color: $eight-blue;
+
+// Секция Видео
+$video-text-color: $one-white;
+$video-icon-color: $one-white;
+
+// Секция Оплата и доставка
+$payanddel-line-color: $one-red;
+$payanddel-title-text-color: $two-blue;
+$payanddel-text-color: $two-blue;
+$payanddel-block-bg-color: $seven-blue;
+
+// Секция Ответы на ваши вопросы
+$faq-line-color: $one-red;
+$faq-title-text-color: $two-blue;
+$faq-block-bg-color: transparentize($nine-blue, 0.5);
+$faq-block-text-color1: $two-blue;
+$faq-block-text-color2: $three-black;
+$faq-block-icon-color: $two-blue;
+$faq-block-item-bg-color: $one-white;
+$faq-link-color: $nine-blue;
+$faq-question-color: $ten-blue;
+
+// Секция Оформить заказ
+$checkout-bg-color: $seven-blue;
+$checkout-title-text-color: $one-blue;
+$checkout-border-color: $two-blue;
+$checkout-text-line-color1: $two-blue;
+$checkout-text-line-color2: transparentize($two-blue, 0.5);
+$checkout-text-color1: $two-blue;
+$checkout-text-color2: transparentize($two-blue, 0.5);
+$checkout-icon-color: $two-blue;
+$checkout-button-border-color: $one-red;
+$checkout-button-bg-color: $one-red;
+$checkout-button-text-color: $one-white;
+$checkout-button-bg-color-hover: transparent;
+$checkout-button-text-color-hover: $one-red;
+
+// Секция Остались вопросы?
+$question-line-color: $one-red;
+$question-title-text-color: $one-blue;
+$question-block-border-color: $ten-blue;
+$question-block-text-color1: $four-black;
+$question-block-text-color2: $two-blue;
+$question-block-text-color3: $eleven-blue;
+$question-block-boder-color-hover: $one-red;
+$question-block-text-color-hover: $one-red;
+$question-block-shadow-color-hover: $one-red;
+
+// Секция Портфолио
+$portfolio-line-color: $one-red;
+$portfolio-title-text-color: $one-blue;
+$portfolio-block-bg-color: $one-blue;
+$portfolio-icon-color: $one-blue;
+$portfolio-icon-color-hover: $one-red;
+
+// Секция СЕО
+$seo-line-color: $one-red;
+$seo-title-text-color: $one-blue;
+$seo-text-color: $three-black;
+
+// Подвал
+$footer-line-color: $one-red;
+$footer-bg-color: $one-blue;
+$footer-title-text-color: $one-white;
+$footer-text-color: $one-white;
+$footer-link-color: $twelve-blue;
+$footer-icon-color: $one-white;
+$footer-map-icon-color: $one-red;
+
+/* ------------------
+* Точки останова
+---------------------*/
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;

@@ -1,0 +1,13 @@
+{
+  "name": "ayaprint22",
+  "description": "Test Project ayaprint22",
+  "authors": [
+    "IvanCherneev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IvanCherneev/html-start-template",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize-css": "^8.0.0"
+  }
+}
