@@ -1,0 +1,75 @@
+.banner {
+	background: url(../images/banner/banner-bg.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 90px 0 76px 0;
+	position: relative;
+	height: 660px;
+}
+
+.banner__title,
+.banner__sub-title,
+.banner__item,
+.banner__phone,
+.button__text {
+	color: $banner-text-color;
+}
+
+.banner__title {
+	@include oswald(bold);
+	font-size: 100px;
+	text-transform: uppercase;
+	line-height: 1.0;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 85px;
+		height: 3px;
+		background-color: $banner-line-color;
+		bottom: -45px;
+		left: 0;
+	}
+}
+
+.banner__content {
+	margin-top: 103px;
+	padding-left: 210px;
+	@extend %clearfix;
+}
+
+.banner__sub-title,
+.banner__circ,
+.banner__info-online {
+	float: left;
+}
+
+.banner__sub-title,
+.banner__phone {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.banner__sub-title {
+	width: 400px;
+	line-height: 1.2;
+}
+
+.banner__circ {
+	width: 335px;
+}
+
+.banner__item {
+	font-size: 24px;
+	background: url(../images/icons/banner-check.png) 0 50% no-repeat;
+	padding-left: 40px;
+	line-height: 2;
+}
+
+.banner__info-online {
+	width: 295px;
+}
+
+.banner__phone {
+	margin-bottom: 20px;
+}

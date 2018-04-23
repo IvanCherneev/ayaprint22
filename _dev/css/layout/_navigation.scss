@@ -1,0 +1,71 @@
+.nav {
+	background-color: $navigation-bg-color;
+}
+
+.nav__list {
+	font-size: 0;
+	text-align: center;
+}
+
+.nav__item {
+	@include inlineblock(middle);
+
+	&:first-child {
+		width: 36%;
+	}
+
+	&:nth-child(2) {
+		width: 14%;
+	}
+
+	&:last-child {
+		width: 50%;
+	}
+	
+	&:hover {
+		background-color: $navigation-bg-color-hover;
+
+		.nav__link-img {
+			background: url(../images/icons/navigation-angle-down-hover.png) right center no-repeat;
+		}
+	}
+}
+
+.nav__link {
+	width: 99%;
+	@include oswald(regular);
+	letter-spacing: 5px;
+	font-size: 19px;
+	display: inline-block;
+	padding: 24px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	&:link {
+		text-decoration: none;
+		color: $navigation-text-color;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $navigation-text-color;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: $navigation-text-color;
+	}
+
+}
+
+
+.nav__link-img {
+	display: inline-block;
+	background: url(../images/icons/navigation-angle-down.png) right center no-repeat;
+	font-size: 16px;
+	position: relative;
+	left: 20px;
+	top: -2px;
+	width: 10px;
+	height: 6px;
+}

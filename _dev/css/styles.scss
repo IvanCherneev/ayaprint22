@@ -3,17 +3,31 @@
 @import "helpers/variables";
 
 // Подключение базовых файлов
-@import "base/bootstrap-3-grid";
 @import "base/adjustment";
 @import "base/typography";
 
 // Подключение плагинов
+@import "plugins/slick";
 
 // Подключение файлов форматирования элементов страницы
+@import "layout/top-bar";
 @import "layout/header";
+@import "layout/navigation";
+@import "layout/banner";
+@import "layout/section";
+@import "layout/popular-circ";
+@import "layout/cost";
+@import "layout/video";
+@import "layout/pay-and-del";
+@import "layout/faq";
+@import "layout/checkout";
+@import "layout/questions";
+@import "layout/portfolio";
+@import "layout/seo";
 @import "layout/footer";
 
 // Подключение файлов с компонентами страницы
+@import "components/slide-menu";
 @import "components/buttons";
 @import "components/dropdown";
-@import "components/navigation";
+@import "components/slick-arrow";

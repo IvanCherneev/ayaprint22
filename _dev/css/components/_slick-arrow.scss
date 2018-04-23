@@ -1,0 +1,57 @@
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+
+    display: block;
+
+    width: 19px;
+    height: 24px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover:before {
+    background: url(../images/icons/portfolio-arrow-left-hover.png) 0 0 no-repeat;
+}
+
+.slick-next:hover:before {
+    background: url(../images/icons/portfolio-arrow-right-hover.png) 0 0 no-repeat;
+}
+
+.slick-prev {
+    left: -80px;
+}
+
+.slick-prev:before {
+    content: '';
+    background: url(../images/icons/portfolio-arrow-left.png) 0 0 no-repeat;
+    width: 19px;
+    height: 24px;
+    position: absolute;
+}
+
+.slick-next {
+    right: -40px;
+}
+
+.slick-next:before {
+    content: '';
+    background: url(../images/icons/portfolio-arrow-right.png) 0 0 no-repeat;
+    width: 19px;
+    height: 24px;
+    position: absolute;
+}

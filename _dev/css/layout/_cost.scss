@@ -1,0 +1,96 @@
+.cost {
+	padding-top: 58px;
+}
+
+.cost__table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin-top: 38px;
+	border: 1px solid $cost-table-border-color;
+	text-align: center;
+}
+
+.cost__table-tr {
+	
+	&:nth-child(odd) {
+		background-color: $cost-table-odd-tr-color;
+	}
+
+	&:nth-child(even) {
+		background-color: $cost-table-even-tr-color;
+	}
+
+	&:first-child {
+		background-color: $cost-table-hr-color;
+		
+		.cost__table-td {
+			color: $cost-table-hr-text-color;
+			padding-top: 16px;
+			padding-bottom: 22px;
+			font-size: 16px;
+			font-weight: 800;
+		}
+	}
+
+}
+
+.cost__table-td {
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.45;
+
+	&:first-child {
+		padding-left: 20px;
+		text-align: left;
+		width: 315px;
+	}
+
+	&:nth-child(2) {
+		width: 190px;
+	}
+
+	&:nth-child(3) {
+		width: 125px;
+	}
+
+	&:nth-child(4) {
+		width: 190px;
+	}
+
+	&:nth-child(5) {
+		width: 105px;
+	}
+	
+}
+
+.cost__table-td_default {
+	background-color: $cost-table-default-td-bg-color;
+	color: $cost-table-default-td-text-color;
+}
+
+.cost__block-info {
+	padding: 27px 23px;
+	border-bottom: 1px solid $cost-border-color;
+}
+
+.cost__info-title,
+.cost__info-desc {
+	font-size: 14px;
+}
+
+.cost__info-title {
+	font-weight: 800;
+	color: $cost-sub-title-text-color;
+}
+
+.cost__info-desc {
+	margin-top: 10px;
+}
+
+.cost__item {
+	color: $cost-text-color;
+	line-height: 1.6;
+}

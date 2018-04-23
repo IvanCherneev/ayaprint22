@@ -1,0 +1,74 @@
+.popular-circ {
+	padding-top: 74px;
+}
+
+.popular-circ__list {
+	@extend %clearfix;
+	margin-top: 10px;
+}
+
+.popular-circ__item {
+	float: left;
+	margin-right: 20px;
+	padding-top: 25px;
+
+	&:last-child {
+		padding-top: 70px;
+	}
+}
+
+.popular-circ__name {
+	margin-bottom: 20px;
+}
+
+.popular-circ__link,
+.popular-circ__btn-link {
+	font-size: 18px;
+	font-weight: 800;	
+}
+
+.popular-circ__link {
+	
+	display: inline-block;
+
+	&:link {
+		color: $popcirc-block-text-color;
+	}
+
+	&:visited {
+		color: $popcirc-block-text-color;
+	}
+
+	a:active {
+		color: $popcirc-block-text-color;
+	}
+
+}
+
+.popular-circ__btn {
+	width: 295px;
+	height: 219px;
+	border: 8px solid $popcirc-block-button-border-color;
+	background-color: $popcirc-block-button-bg-color;
+	padding: 35px;
+	background: url(../images/icons/circ-arrow-right.png) 210px 150px no-repeat;
+	box-shadow: 0px 72px 126px -11px $popcirc-block-button-shadow-color;
+}
+
+.popular-circ__btn-link {
+
+	line-height: 1.2;
+
+	&:link {
+		color: $popcirc-block-button-text-color;
+	}
+
+	&:visited {
+		color: $popcirc-block-button-text-color;
+	}
+
+	a:active {
+		color: $popcirc-block-button-text-color;
+	}
+
+}

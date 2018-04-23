@@ -1,7 +1,5 @@
 // Переменные размеров для adjustment
-$footer-height: 1100px;
 $container-width: 1240px;
-$padding-footer: 0;
 
 // Цветовая палитра
 $one-white: #ffffff;
@@ -62,11 +60,11 @@ $dropdown-bg-color: $seven-blue;
 $dropdown-line-color: $one-red;
 $dropdown-title-text-color: $one-blue;
 $dropdown-item-color: $two-blue;
-$dropdown-shadow-color: $three-blue;
+$dropdown-shadow-color: transparentize($three-blue, 0.74);
 
 // Слайд меню
 $slidenavigation-bg-color: $two-blue;
-$slidenavigation-text-color: $one-red;
+$slidenavigation-text-color: $one-white;
 $slidenavigation-border-color: $four-blue;
 $slidenavigation-bg-color-hover: $one-red;
 $slidenavigation-border-color-hover: $one-red;
@@ -77,17 +75,17 @@ $banner-line-color: $one-red;
 $banner-button-bg-color: $one-red;
 $banner-button-border-color: $one-red;
 $banner-button-bg-color-hover: transparent;
+$banner-button-text-color-hover: $one-white;
 
 // Секция Популярные тиражи
 $banner-line-color: $one-red;
 $popcirc-title-text-color: $two-blue;
 $popcirc-block-text-color: $two-blue;
-$popcirc-block-bg-color: $two-blue;
 $popcirc-block-button-bg-color: transparent;
 $popcirc-block-button-border-color: $one-red;
 $popcirc-block-button-text-color: $one-red;
 $popcirc-block-button-icon-color: $one-red;
-$popcirc-block-button-shadow-color: $one-red;
+$popcirc-block-button-shadow-color: transparentize($one-red, 0.84);
 
 // Секция Стоимость
 $cost-line-color: $one-red;
@@ -95,7 +93,7 @@ $cost-title-text-color: $two-blue;
 $cost-table-border-color: $eight-blue;
 $cost-table-hr-color: $two-blue;
 $cost-table-hr-text-color: $one-white;
-$cost-table-odd-tr-color: $two-blue;
+$cost-table-odd-tr-color: $one-white;
 $cost-table-even-tr-color: $eight-blue;
 $cost-table-tr-text-color: $three-black;
 $cost-table-default-td-bg-color: $one-red;
@@ -117,7 +115,7 @@ $payanddel-block-bg-color: $seven-blue;
 // Секция Ответы на ваши вопросы
 $faq-line-color: $one-red;
 $faq-title-text-color: $two-blue;
-$faq-block-bg-color: transparentize($nine-blue, 0.5);
+$faq-block-bg-color: transparentize($seven-blue, 0.5);
 $faq-block-text-color1: $two-blue;
 $faq-block-text-color2: $three-black;
 $faq-block-icon-color: $two-blue;
@@ -154,7 +152,6 @@ $question-block-shadow-color-hover: $one-red;
 // Секция Портфолио
 $portfolio-line-color: $one-red;
 $portfolio-title-text-color: $one-blue;
-$portfolio-block-bg-color: $one-blue;
 $portfolio-icon-color: $one-blue;
 $portfolio-icon-color-hover: $one-red;
 

@@ -1,0 +1,52 @@
+.top-bar {
+	background-color: $topbar-bg-color;
+	border-bottom: 1px solid $topbar-line-color;
+}
+
+.top-nav {
+	width: 1030px;
+	float: left;
+}
+
+.top-nav__list {
+	@extend %clearfix;
+}
+
+.top-nav__item {
+	float: left;
+	margin-right: 56px;
+}
+
+.top-nav__link,
+.bookmarks__link {
+	letter-spacing: 1px;
+	padding: 7px 0 10px 0;
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+
+	&:link {
+		text-decoration: none;
+		color: $topbar-text-color;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $topbar-text-color;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: $topbar-text-color;
+	}
+}
+
+.bookmarks {
+	float: right;
+	width: 210px;
+	background: url(../images/icons/tp-star.png) left 45% no-repeat;
+}
+
+.bookmarks__link {
+	padding-left: 15px;
+}

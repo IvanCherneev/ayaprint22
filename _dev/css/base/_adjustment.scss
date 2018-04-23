@@ -15,6 +15,7 @@ html, body {
 // Первоначальные настройки всей страницы
 html {
 	font-size: 100%;
+	font-family: "Segoe UI", "Open Sans", "Lucida Grande", sans-serif;
 }
 
 body {
@@ -23,41 +24,15 @@ body {
 	background-color: $page-bg-color;
 }
 
-// Прижатие футера
-.wrapper {
-	min-height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.wrapper:after {
-	content: "";
-	display: block;
-	height: $footer-height;
-	clear: both;
-	overflow: hidden;
-}
-
-.maincontent {
-	padding-bottom: $padding-footer;
-}
-
-.footer {
-	width: 100%;
-	height: $footer-height;
-	margin-top: -$footer-height;
-	position: relative;
-}
-
 // Встраивается в другие блоки и выравнивает по центру
 .container {
 	@extend %clearfix;
-	//margin: 0 auto; // при отключении bootstrap раскомментировать
-	max-width: $container-width; // + 20px; // 20px для отображения на смартах (при отключении bootstrap раскомментировать)
+	margin: 0 auto;
+	max-width: $container-width; // + 20px; 
 	min-width: 320px;
-	//padding: 0 20px 0 20px; // при отключении bootstrap раскомментировать
+	//padding: 0 20px 0 20px;
 	position: relative;
-	outline: 1px solid black; // для отладки
+	//outline: 1px solid black; // для отладки
 }
 
 // Настройка списка
@@ -75,6 +50,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: normal;
+}
+
+// Настройка параграфов
+p {
+	margin: 0;
 }
 
 // Настройка изображений

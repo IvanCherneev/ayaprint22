@@ -1,0 +1,99 @@
+.questions {
+	padding-top: 76px;
+	padding-bottom: 60px;
+}
+
+.q-contacts {
+	@extend %clearfix;
+	margin-top: 45px;
+}
+
+.q-contacts__item {
+	float: left;
+	text-align: center;
+	width: 308.3px;
+	border: 3px solid $question-block-border-color;
+	padding-top: 35px;
+	padding-bottom: 50px;
+	line-height: 1.2;
+
+	&:first-child {
+
+		.q-contacts__link {
+			margin-top: 1px;
+		}
+
+	}
+
+	&:hover {
+		border-color: $question-block-boder-color-hover;
+		box-shadow: 0px 72px 126px -11px $popcirc-block-button-shadow-color;
+	}
+
+}
+
+.q-contacts__title,
+.q-contacts__method {
+	font-size: 24px;
+}
+
+.q-contacts__title {
+	color: $question-block-text-color1;
+	font-size: 24px;
+}
+
+.q-contacts__method {
+	font-weight: 800;
+	color: $question-block-text-color2;
+}
+
+.q-contacts__block-img {
+	margin-top: 18px;
+	height: 155px;
+	position: relative;
+	text-align: center;
+	font-size: 0;
+
+	&::before {
+		content: " ";
+		height: 100%;
+		@include inlineblock(middle);
+	}
+}
+
+.q-contacts__img {
+	@include inlineblock(middle);
+}
+
+.q-contacts__link {
+	display: block;
+	font-size: 16px;
+	font-weight: 800;
+	margin-top: 20px;
+
+	&:link {
+		color: $question-block-text-color2;
+	}
+
+	&:visited {
+		color: $question-block-text-color2;
+	}
+		
+	&:hover {
+		color: $question-block-text-color-hover;
+		
+		span {
+			color: $question-block-text-color-hover;
+		}
+
+	}
+
+	a:active {
+		color: $question-block-text-color2;
+	}
+
+	span {
+		color: $question-block-text-color3;
+	}
+
+}

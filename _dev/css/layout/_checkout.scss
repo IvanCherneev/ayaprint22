@@ -1,0 +1,177 @@
+.checkout {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.checkout__bg {
+	background-color: $checkout-bg-color;
+	width: 924px;
+	height: 600px;
+	position: absolute;
+	top: 60px;
+	left: 255px;
+}
+
+.form {
+	position: relative;
+}
+
+.form__fieldset {
+	border: 8px solid $checkout-border-color;
+	margin: 0;
+	padding: 26px 95px 54px 95px;
+	position: relative;
+}
+
+.form__legend {
+	text-align: center;
+	padding: 0 96px;
+	color: $checkout-title-text-color;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.form__inputs {
+	@extend %clearfix;
+}
+
+.form__comment {
+	resize: none;
+	width: 100%;
+	height: 119px;
+}
+
+.form__input-box,
+.form__name,
+.form__company,
+.form__email,
+.form__phone {
+	width: 351px;
+	position: relative;
+}
+
+.form__name,
+.form__company,
+.form__email,
+.form__phone {
+	height: 57px;
+}
+
+
+.form__name,
+.form__company,
+.form__email,
+.form__phone,
+.form__comment {
+	border: none;
+	border-bottom: 3px solid $checkout-text-line-color2;
+	outline: none;
+	font-size: 24px;
+	color: $checkout-text-line-color2;
+	background-color: $checkout-bg-color;
+	padding-right: 24px;
+	padding-bottom: 25px;
+
+	&::-moz-placeholder {
+		color: $checkout-text-color2; /* Цвет подсказывающего текста */
+	}
+
+	&::-webkit-input-placeholder {
+		color: $checkout-text-color2;
+	}
+
+	&:-ms-input-placeholder {
+		color: $checkout-text-color2;
+	}
+
+	&::-ms-input-placeholder {
+		color: $checkout-text-color2;
+	}
+
+	&::placeholder {
+		color: $checkout-text-color2;
+	} 
+
+	&:valid {
+
+		color: $checkout-text-color1;
+		border-color: $checkout-text-line-color1;
+
+	}
+
+	&:valid + .form__check-img {
+		display: inline-block;
+		position: absolute;
+		content: ""; 
+		background: url(../images/icons/checkout-check.png) 0 0 no-repeat;
+		width: 16px;
+		height: 13px;
+		top: 53px;
+		right: 4px;
+	}
+}
+
+.form__input-box {
+	float: left;
+	margin-right: 15px;
+	padding-top: 42px;
+
+	&:nth-child(even) {
+		margin-right: 0;
+	}
+}
+
+.form__textarea-box {
+	padding-top: 42px;
+	position: relative;
+}
+
+.form__add-file {
+	padding: 28px 0 28px 41px;
+	background: url(../images/icons/checkout-add.png) 0 50% no-repeat;
+}
+
+.form__add-file-link {
+	
+	font-size: 14px;
+
+	&:link {
+		text-decoration: none;
+		color: $checkout-text-color1;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $checkout-text-color1;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: $checkout-text-color1;
+	}
+
+}
+
+.form__button-box {
+	text-align: center;
+}
+
+.form__button {
+	display: inline-block;
+	border: none;
+	outline: none;
+	background-color: $checkout-button-bg-color;
+	width: 295px;
+	cursor: pointer;
+	padding: 16px;
+	border: 2px solid $checkout-button-border-color;
+	color: $checkout-button-text-color;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $checkout-button-bg-color-hover;
+		color: $checkout-button-text-color-hover;
+	}
+}

@@ -1,0 +1,49 @@
+doctype html
+html(lang='ru-RU')
+	
+	include _head
+
+	body
+		.wrapper
+			.maincontent
+
+				include _top-bar
+				
+				include _header
+				
+				include _navigation
+				
+				include _banner
+
+				include _popular-circ
+
+				include _cost
+
+				include _video
+
+				include _pay-and-del
+
+				include _faq
+
+				include _checkout
+
+				include _questions
+
+				include _portfolio
+
+				include _seo	
+		
+		include _footer
+
+		script(src='js/vendor.js?rev=@@hash')
+		script(src='js/main.min.js?rev=@@hash')
+		script.
+			$('.slider').slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+			});

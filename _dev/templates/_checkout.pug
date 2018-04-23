@@ -1,0 +1,26 @@
+section.checkout.section(id="checkout")
+	.container
+		.section__content
+			.checkout__bg
+			form.checkout__form.form(action="#" method="GET" name="checkout" enctype="multipart/form-data")
+				fieldset.form__fieldset
+					legend.form__legend Оформить заказ
+					.form__inputs
+						.form__input-box
+							input.form__name(type="text" name="name" placeholder="Ваше имя" required='')
+							span.form__check-img
+						.form__input-box
+							input.form__company(type="text" name="company" placeholder="Компания" required='')
+							span.form__check-img
+						.form__input-box
+							input.form__email(type="email" name="email" placeholder="Элект. почта" required='')
+							span.form__check-img
+						.form__input-box
+							input.form__phone(type="tel" name="phone" placeholder="Телефон*" required='')
+							span.form__check-img
+					.form__textarea-box
+						textarea.form__comment(name="comment" placeholder="Комментарий" required='')
+					.form__add-file 
+						a.form__add-file-link(href="#") Прикрепить файл
+					.form__button-box
+						input.form__button(type="submit" name="send" value="Отправить")

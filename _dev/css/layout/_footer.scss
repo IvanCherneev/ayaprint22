@@ -1,8 +1,153 @@
 .footer {
-	padding-top: 40px;
+	padding-top: 75px;
+	background-color: $footer-bg-color;
 }
 
-.copyright {
-	border-top: 1px solid #745e4e;
-	text-align: center;
+.footer__block {
+	float: left;
+}
+
+.footer__panel-widget {
+	@extend %clearfix;
+	margin-bottom: 74px;
+}
+
+.widget-print {
+	width: 315px;
+}
+
+.widget-services {
+	width: 630px;
+}
+
+.widget-contacts {
+	width: 295px;
+}
+
+.widget-services__list {
+	width: 315px;
+	float: left;
+}
+
+.widget-print__title,
+.widget-services__title,
+.widget-contacts__title,
+.footer__map-title {
+	color: $footer-title-text-color;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 61px;
+		height: 2px;
+		background-color: $footer-line-color;
+		bottom: -25px;
+		left: 0;
+	}
+}
+
+.widget-print__list,
+.widget-services__list,
+.widget-contacts__desc {
+	margin-top: 50px;
+}
+
+.widget-print__link,
+.widget-services__link {
+
+	font-size: 14px;
+	line-height: 1.75;
+
+	&:link {
+		text-decoration: none;
+		color: $footer-text-color;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $footer-text-color;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: $footer-text-color;
+	}
+
+}
+
+.widget-contacts__block1,
+.widget-contacts__block2 {
+	padding-left: 41px;
+	margin-top: 38px;
+}
+
+.widget-contacts__block1 {
+	background: url(../images/icons/footer-call.png) left 10px no-repeat;
+}
+
+.widget-contacts__block2 {
+	background: url(../images/icons/footer-location.png) left 10px no-repeat;
+}
+
+.widget-contacts__desc,
+.widget-contacts__phone,
+.widget-contacts__shedule,
+.widget-contacts__adress {
+	font-size: 14px;
+	color: $footer-text-color;
+}
+
+.widget-contacts__phone {
+	font-weight: 800;
+}
+
+.widget-contacts__email,
+.widget-contacts__link {
+	
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 10px;
+
+	&:link {
+		text-decoration: none;
+		color: $footer-link-color;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $footer-link-color;
+	}
+
+	a:active {
+		text-decoration: none;
+		color: $footer-link-color;
+	}
+
+}
+
+.footer__map-title {
+	margin-bottom: 25px;
+}
+
+.footer__map-outer {
+	width: 100%;
+}
+
+.footer__map-inner {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 38.05%;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }

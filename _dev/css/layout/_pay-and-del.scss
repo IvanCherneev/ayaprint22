@@ -1,0 +1,73 @@
+.pay-and-del {
+	padding-top: 75px;
+}
+
+.payment {
+	width: 630px;
+}
+
+.payment__item {
+	float: left;
+}
+
+.payment__desc {
+	padding-right: 30px;
+}
+
+.delivery {
+	width: 295px;
+}
+
+.payment,
+.delivery {
+	@extend %clearfix;
+	float: left;
+}
+
+.payment__list,
+.delivery__list {
+	margin-top: 35px;
+	@extend %clearfix;
+}
+
+.delivery__item,
+.payment__item {
+	@extend %clearfix;
+	width: 315px;
+	margin-bottom: 25px;
+}
+
+.payment__block-img,
+.delivery__block-img {
+	width: 117px;
+	height: 117px;
+	border-radius: 50%;
+	background-color: $payanddel-block-bg-color;
+	position: relative;
+	text-align: center;
+	font-size: 0;
+	float: left;
+
+	&::before {
+		content: " ";
+		height: 100%;
+		@include inlineblock(middle);
+	}
+}
+
+.payment__img,
+.delivery__img {
+	@include inlineblock(middle);
+}
+
+.payment__desc,
+.delivery__desc {
+	color: $payanddel-text-color;
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+	width: 195px;
+	padding-left: 32px;
+	padding-top: 20px;
+	line-height: 1.2;
+}
