@@ -12,3 +12,34 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
+// Функция скрытия ответа при клике
+$.fn.selectAnswer = function() {
+
+	this.on('click', function(e) {
+
+		$(this).parents('.answer').addClass('answer_hidden');
+		e.preventDefault();
+
+	});
+
+};
+
+$('.answer__collapse').selectAnswer();
+
+// Функция показа ответа при клике
+$.fn.selectAnswer = function() {
+
+	this.on('click', function(e) {
+
+		if ($('.answer').hasClass('answer_hidden') === true) {
+			$('.answer').addClass('answer_hidden');
+		}
+		$(this).parents('.answer').removeClass('answer_hidden');
+		e.preventDefault();
+
+	});
+
+};
+
+$('.answer__title').selectAnswer();
