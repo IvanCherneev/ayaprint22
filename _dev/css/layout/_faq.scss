@@ -54,6 +54,15 @@
 		color: $faq-question-color;
 		@include oswald(bold);
 		font-size: 200px;
+
+		@include desktop1 {
+			left: -150px;
+		}
+
+		@include desktop2 {
+			left: -85px;
+			font-size: 160px;
+		}
 	}
 }
 

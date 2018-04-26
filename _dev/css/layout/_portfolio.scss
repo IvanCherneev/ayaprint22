@@ -5,3 +5,14 @@
 .slider {
     margin-top: 50px;
 }
+
+.slider__img {
+
+	@include desktop1 {
+		width: 260px;
+	}
+
+	@include desktop2 {
+		width: 240px;
+	}
+}

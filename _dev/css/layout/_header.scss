@@ -3,7 +3,7 @@ header {
 }
 
 .logo {
-	width: 275px;
+	width: 22.1774%; // 275 / 1240
 	float: left;
 }
 
@@ -15,7 +15,7 @@ header {
 }
 
 .contacts {
-	width: 755px;
+	width: 60.89%; // 755 / 1240
 	float: left;
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 .contacts__block1 {
-	width: 390px;
+	width: 51.6556%; // 390 / 755
 	background: url(../images/icons/header-call.png) left 10px no-repeat;
 }
 
@@ -36,7 +36,8 @@ header {
 }
 
 .contacts__block2 {
-	width: 365px;
+	width: 48.3443%; // 365 / 755
+
 	background: url(../images/icons/header-location.png) left 10px no-repeat;
 }
 
@@ -80,7 +81,7 @@ header {
 }
 
 .rush-order {
-	width: 210px;
+	width: 16.93%; // 210 / 1240
 	float: left;
 	padding-top: 4px;
 }

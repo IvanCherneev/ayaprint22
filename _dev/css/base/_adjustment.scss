@@ -28,9 +28,9 @@ body {
 .container {
 	@extend %clearfix;
 	margin: 0 auto;
-	max-width: $container-width; // + 20px; 
+	max-width: $container-width + 40px;
 	min-width: 320px;
-	//padding: 0 20px 0 20px;
+	padding: 0 20px 0 20px;
 	position: relative;
 	//outline: 1px solid black; // для отладки
 }

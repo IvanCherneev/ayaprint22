@@ -3,7 +3,7 @@
 	background-size: cover;
 	padding: 90px 0 76px 0;
 	position: relative;
-	height: 660px;
+	//height: 100%;
 }
 
 .banner__title,
@@ -30,6 +30,10 @@
 		bottom: -45px;
 		left: 0;
 	}
+
+	@include desktop2 {
+		font-size: 90px;
+	}
 }
 
 .banner__content {
@@ -48,15 +52,19 @@
 .banner__phone {
 	font-size: 30px;
 	font-weight: 800;
+
+	@include desktop2 {
+		font-size: 23px;
+	}
 }
 
 .banner__sub-title {
-	width: 400px;
+	width: 38.8349%; // 400 / 1030
 	line-height: 1.2;
 }
 
 .banner__circ {
-	width: 335px;
+	width: 32.5242%; // 335 / 1030
 }
 
 .banner__item {
@@ -64,10 +72,14 @@
 	background: url(../images/icons/banner-check.png) 0 50% no-repeat;
 	padding-left: 40px;
 	line-height: 2;
+
+	@include desktop2 {
+		font-size: 18px;
+	}
 }
 
 .banner__info-online {
-	width: 295px;
+	width: 28.6407% // 295 / 1030
 }
 
 .banner__phone {

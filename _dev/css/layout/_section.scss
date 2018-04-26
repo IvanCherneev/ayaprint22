@@ -2,10 +2,29 @@
 	padding-left: 210px;
 	padding-right: 105px;
 	@extend %clearfix;
+
+	@include desktop1 {
+		padding-left: 150px;
+	}
+
+	@include desktop2 {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
 }
 
 .section__content_padding {
 	padding-right: 85px;
+
+	@include desktop2 {
+		padding-right: 70px;
+	}
+}
+
+.section__content_portfolio-padding {
+	@include desktop2 {
+		padding-right: 70px;
+	}
 }
 
 .section__title {
@@ -23,6 +42,15 @@
 		top: 15px;
 		left: -210px;
 		background-color: $banner-line-color;
+
+		@include desktop1 {
+			left: -150px;
+		}
+
+		@include desktop2 {
+			left: 0px;
+			top: 40px;
+		}
 	}
 }
 

@@ -22,7 +22,7 @@
 
 .seo__title {
 	float: left;
-	width: 295px;
+	width: 31.8918%; // 295 / 925
 	font-size: 18px;
 	position: relative;
 	padding-right: 50px;
@@ -48,7 +48,7 @@
 }
 
 .seo__desc {
-	width: 630px;
+	width: 68.1081%; // 630 / 925
 	margin-left: 295px;
 	color: $seo-text-color;
 

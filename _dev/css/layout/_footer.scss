@@ -13,19 +13,19 @@
 }
 
 .widget-print {
-	width: 315px;
+	width: 25.4032%; // 315 / 1240
 }
 
 .widget-services {
-	width: 630px;
+	width: 50.8065%; // 630 / 1240
 }
 
 .widget-contacts {
-	width: 295px;
+	width: 23.7903%; // 295 / 1240
 }
 
 .widget-services__list {
-	width: 315px;
+	width: 50%; // 315 / 630
 	float: left;
 }
 

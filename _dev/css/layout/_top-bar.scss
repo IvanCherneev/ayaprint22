@@ -4,8 +4,12 @@
 }
 
 .top-nav {
-	width: 1030px;
+	width: 83%; // 1030 / 1240
 	float: left;
+
+	@include desktop2 {
+		width: 100%;
+	}
 }
 
 .top-nav__list {
@@ -43,10 +47,14 @@
 
 .bookmarks {
 	float: right;
-	width: 210px;
+	width: 16.9999%; // 210 / 1240
 	background: url(../images/icons/tp-star.png) left 45% no-repeat;
+
+	@include desktop2 {
+		display: none;
+	}
 }
 
 .bookmarks__link {
-	padding-left: 15px;
+	padding-left: 14px;
 }

@@ -5,11 +5,21 @@
 
 .checkout__bg {
 	background-color: $checkout-bg-color;
-	width: 924px;
-	height: 600px;
+	width: 74%; // 925
+	height: 100%; // 600
 	position: absolute;
 	top: 60px;
-	left: 255px;
+	left: 274px;
+
+	@include desktop1 {
+		left: 244px;
+	}
+
+	@include desktop2 {
+		left: 140px;
+		width: 80%;
+		height: 98%
+	}
 }
 
 .form {
@@ -21,6 +31,16 @@
 	margin: 0;
 	padding: 26px 95px 54px 95px;
 	position: relative;
+
+	@include desktop1 {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	@include desktop2 {
+		padding-right: 52px;
+		padding-left: 52px;
+	}
 }
 
 .form__legend {
@@ -42,12 +62,15 @@
 	height: 119px;
 }
 
-.form__input-box,
+.form__input-box {
+	width: 48.8178%; // 351 / 719
+}
+
 .form__name,
 .form__company,
 .form__email,
 .form__phone {
-	width: 351px;
+	width: 100%;
 	position: relative;
 }
 

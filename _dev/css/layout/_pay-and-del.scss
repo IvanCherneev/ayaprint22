@@ -3,11 +3,12 @@
 }
 
 .payment {
-	width: 630px;
+	width: 66.67%; // 630 / 945
 }
 
 .payment__item {
 	float: left;
+	width: 50%;
 }
 
 .payment__desc {
@@ -15,7 +16,11 @@
 }
 
 .delivery {
-	width: 295px;
+	width: 33.33%; // 315 / 945
+}
+
+.delivery__item {
+ 	width: 100%;
 }
 
 .payment,
@@ -33,7 +38,6 @@
 .delivery__item,
 .payment__item {
 	@extend %clearfix;
-	width: 315px;
 	margin-bottom: 25px;
 }
 
@@ -65,9 +69,7 @@
 	color: $payanddel-text-color;
 	font-size: 16px;
 	font-weight: bold;
-	float: right;
-	width: 195px;
-	padding-left: 32px;
+	margin-left: 152px;
 	padding-top: 20px;
 	line-height: 1.2;
 }
